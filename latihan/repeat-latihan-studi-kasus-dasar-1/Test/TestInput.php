@@ -1,6 +1,6 @@
 <?php
 
-require_once "../Helper/input.php";
+require_once "../Helper/Input.php";
 
-$input = input("Nama Lengkap");
-echo "$input";
+$name = input("Masukan Nama Lengkap Anda");
+echo "$name" . PHP_EOL;

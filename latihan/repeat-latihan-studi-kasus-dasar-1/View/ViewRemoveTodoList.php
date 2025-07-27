@@ -1,22 +1,22 @@
 <?php
 
-require_once __DIR__ . "/../Helper/input.php";
+require_once __DIR__ . "/../Model/TodoList.php";
 require_once __DIR__ . "/../BusinessLogic/RemoveTodoList.php";
+require_once __DIR__ . "/../Helper/Input.php";
 
 function viewRemoveTodoList() {
-    echo "Menghapus Todo" . PHP_EOL;
+    echo "Menghapus Todo List" . PHP_EOL;
+    $number = input("Nomor (x untuk batal)");
 
-    $pilihan = input("Nomor (x untuk membatalkan pilihan)");
-
-    if ($pilihan == "x") {
-        echo "Batal Menghapus Todo" . PHP_EOL;
+    if ($number == "x") {
+        echo "Batal Menghapus Todo List" . PHP_EOL;
     } else {
-        $success = removeTodoList($pilihan);
+        $success = removeTodoList($number);
 
         if ($success) {
-            echo "Berhasil Menghapus Todo" . PHP_EOL;
+            echo "Berhasil Menghapus Todo List Nomor $number" . PHP_EOL;
         } else {
-            echo "Gagal Menghapus Todo" . PHP_EOL;
+            echo "Gagal Menghapus Todo List Nomor $number" . PHP_EOL;
         }
     }
 }

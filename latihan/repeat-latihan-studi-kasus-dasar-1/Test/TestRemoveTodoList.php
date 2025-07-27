@@ -8,9 +8,15 @@ require_once "../BusinessLogic/ShowTodoList.php";
 addTodoList("Dandi");
 addTodoList("Rasyid");
 addTodoList("Syafira");
+addTodoList("Anindita");
+addTodoList("Belajar PHP di PZN");
 
 showTodoList();
 
 removeTodoList(2);
+
+showTodoList();
+
+removeTodoList(3);
 
 showTodoList();

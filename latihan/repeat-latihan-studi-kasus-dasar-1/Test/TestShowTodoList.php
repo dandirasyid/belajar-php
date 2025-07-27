@@ -6,6 +6,6 @@ require_once "../BusinessLogic/ShowTodoList.php";
 
 addTodoList("Dandi Rasyid");
 addTodoList("Syafira Anindita Maharani");
-addTodoList("Belajar PHP Dasar Di PZN");
+addTodoList("Programmer Zaman Now");
 
 showTodoList();
