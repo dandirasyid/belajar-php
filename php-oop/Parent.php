@@ -9,4 +9,4 @@ echo $shape->getShape() . PHP_EOL;
 
 $rectangle = new Rectangle();
 echo $rectangle->getShape() . PHP_EOL;
-echo $rectangle->getParentShape();
+echo $rectangle->getParentShape() . PHP_EOL;
