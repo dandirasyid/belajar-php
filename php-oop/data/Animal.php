@@ -9,12 +9,12 @@ abstract class Animal {
 
 class Cat extends Animal {
     public function run(): void {
-        echo "Cat $this->name is running in the park" . PHP_EOL;
+        echo "Cat $this->name is run in the park" . PHP_EOL;
     }
 }
 
 class Dog extends Animal {
-    public function run(): void {
-        echo "Dog $this->name is running in the park" . PHP_EOL;
+    public function run(): void{
+        echo "Dog $this->name is run in the park" . PHP_EOL;
     }
 }

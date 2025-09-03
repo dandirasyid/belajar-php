@@ -18,7 +18,7 @@ class Category {
         return $this->expensive;
     }
 
-    public function setExpensive(bool $expensive) {
+    public function setExpensive(bool $expensive): void {
         $this->expensive = $expensive;
     }
 }
