@@ -20,6 +20,8 @@ $service = new TicketService();
 // Pesan Tiket
 $ticket = $service->orderTicket(customer: $customer, movie: $movie1, quantity: 2);
 
-// Cetak Tiket
+// Cetak Tiket Bioskop
 
 $ticket->printTicket();
+
+
